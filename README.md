@@ -1,4 +1,4 @@
-BBB-mikroBUX-Cape
+BeagleBone-mikroBUS-Cape
 =================
 
-BeagleBoard Balck Cape to support up to 4 mikroBUS boards.
+BeagleBone Cape to support up to 4 mikroBUS boards.
