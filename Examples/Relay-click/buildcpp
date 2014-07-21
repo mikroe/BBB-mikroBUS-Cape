@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Compiling the relay test example"
+
+g++ -O2 -Wall relaytest.cpp SimpleGPIO.cpp -o relaytestapp 
