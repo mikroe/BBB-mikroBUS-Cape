@@ -124,12 +124,6 @@
 			pwm_P8_19: pinmux_pwm_P8_19_pins {
 				pinctrl-single,pins = <0x020  0x4>; /* P8_19 (ZCZ ball U10) | MODE 4 */
 			};
-			pwm_P9_14: pinmux_pwm_P9_14_pins {
-				pinctrl-single,pins = <0x048  0x6>; /* P9_14 (ZCZ ball U14) | MODE 6 */
-			};
-			pwm_P9_16: pinmux_pwm_P9_16_pins {
-				pinctrl-single,pins = <0x04c  0x6>; /* P9_16 (ZCZ ball T14) | MODE 6 */
-			};
 			bb_gpio_pins: pinmux_bb_gpio_pins {
 				pinctrl-single,pins = <
 					0x034 0x17	/* gpmc_ad13.gpio1_13, OUTPUT_PULLUP | MODE7 */
@@ -146,6 +140,8 @@
 					0x1b4 0x17	/* xdma_event_intr1.gpio0_20, OUTPUT_PULLUP | MODE7 */
 					0x19c 0x17	/* mcasp0_ahclkr.spi1_cs0, OUTPUT_PULLUP | MODE7 */
 					0x164 0x17	/* eCAP0_in_PWM0_out.spi1_cs1 OUTPUT_PULLUP | MODE7 */
+					0x048 0x17 /* P9_14 (ZCZ ball U14) | MODE 6 */
+					0x04c 0x17 /* P9_16 (ZCZ ball T14) | MODE 6 */
 				>;
 			};
 		};
@@ -240,7 +236,7 @@
 				pinctrl-names	= "default";
 				pinctrl-0	= <&pwm_P8_13>;
 
-				enabled		= <1>;
+				enabled		= <0>;
 				duty		= <0>;
 				status 		= "okay";
 			};
@@ -258,7 +254,7 @@
 				pinctrl-names	= "default";
 				pinctrl-0	= <&pwm_P8_19>;
 
-				enabled		= <1>;
+				enabled		= <0>;
 				duty		= <0>;
 				status 		= "okay";
 			};
@@ -274,7 +270,7 @@
 				pwm-names 	= "PWM_P9_14";
 			    pinctrl-names	= "default";
 			    pinctrl-0	= <&pwm_P9_14>;
-				enabled		= <1>;
+				enabled		= <0>;
 				duty		= <0>;
 				status 		= "okay";
 			};
@@ -290,7 +286,7 @@
 				pwm-names 	= "PWM_P9_16";
 			    pinctrl-names	= "default";
 			    pinctrl-0	= <&pwm_P9_16>;
-				enabled		= <1>;
+				enabled		= <0>;
 				duty		= <0>;
 				status 		= "okay";
 			};
