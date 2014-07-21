@@ -140,8 +140,8 @@
 					0x1b4 0x17	/* xdma_event_intr1.gpio0_20, OUTPUT_PULLUP | MODE7 */
 					0x19c 0x17	/* mcasp0_ahclkr.spi1_cs0, OUTPUT_PULLUP | MODE7 */
 					0x164 0x17	/* eCAP0_in_PWM0_out.spi1_cs1 OUTPUT_PULLUP | MODE7 */
-					0x048 0x17 /* P9_14 (ZCZ ball U14) | MODE 6 */
-					0x04c 0x17 /* P9_16 (ZCZ ball T14) | MODE 6 */
+					0x048 0x17 /* P9_14 (ZCZ ball U14) | MODE 7 */
+					0x04c 0x17 /* P9_16 (ZCZ ball T14) | MODE 7 */
 				>;
 			};
 		};
@@ -261,39 +261,8 @@
 		};
 	};
 	
-	fragment@8 {
-		target = <&ocp>;
-		__overlay__ {
-			pwm_test_P9_14 {
-				compatible	= "pwm_test";
-				pwms 		= <&ehrpwm1 0 500000 1>;
-				pwm-names 	= "PWM_P9_14";
-			    pinctrl-names	= "default";
-			    pinctrl-0	= <&pwm_P9_14>;
-				enabled		= <0>;
-				duty		= <0>;
-				status 		= "okay";
-			};
-		};
-	};
-	
-	fragment@9 {
-		target = <&ocp>;
-		__overlay__ {
-			pwm_test_P9_16 {
-				compatible	= "pwm_test";
-				pwms 		= <&ehrpwm1 1 500000 1>;
-				pwm-names 	= "PWM_P9_16";
-			    pinctrl-names	= "default";
-			    pinctrl-0	= <&pwm_P9_16>;
-				enabled		= <0>;
-				duty		= <0>;
-				status 		= "okay";
-			};
-		};
-	};
     
-	fragment@10 {
+	fragment@8 {
 		target = <&ocp>;
 		__overlay__ {
             /* avoid stupid warning */
