@@ -8,3 +8,5 @@ To get started with the examples use the wiki: https://www.tigal.com/wiki/doku.p
 On the wiki there are a few simple test examples show how to setup. 
 
 All files that are needed. The .dts and the .dtbo files are located in the tar, this is to make sure you allways have a clean copy. This cape uses device tree overlays. 
+
+NOTE: At this point in time these examples are only fully functional on Angström, Debian eaxmples are soon to come.
