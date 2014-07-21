@@ -89,7 +89,11 @@
 			/* avoid stupid warning */
         	        #address-cells = <1>;
 	                #size-cells = <1>;
-
+			bb_spi1_pins: pinmux_bb_spi1_pins {
+				pinctrl-single,pins = <
+						0x194 0x33	/* mcasp0_fsx.spi1_d0, INPUT_PULLUP | MODE3 */
+				>;
+			};
 			bb_i2c2_pins: pinmux_bb_i2c2_pins {
 				pinctrl-single,pins = <
 					0x17c 0x73	/* uart1_rtsn.i2c2_scl, SLEWCTRL_SLOW | INPUT_PULLUP | MODE3 */
