@@ -1,6 +1,11 @@
 import spidev
 import time
 
+# ===============
+# led Class
+# import this if you need to use the 8x8Rclick
+# ===============
+
 spi = spidev.SpiDev()
 spi.open(1,0)  # /dev/spidev1.0
 
