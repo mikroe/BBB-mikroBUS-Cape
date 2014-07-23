@@ -1,5 +1,10 @@
 import smbus
 
+# ===================
+# adxl345 class 
+# Import this to use the adxl345 module
+# ==================
+
 class ADXL345 :
 
 	_POWER_CTL =   0x2D
