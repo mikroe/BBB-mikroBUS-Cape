@@ -2,9 +2,8 @@ import spidev
 import time
 
 # ===============
-# led Class
-# import this if you need to use the 8x8Rclick
-#
+# led main example with spi
+# Just use to test led module
 # ===============
 
 spi = spidev.SpiDev()
