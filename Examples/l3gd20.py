@@ -1,4 +1,13 @@
+#!/usr/bin/python
+
 import smbus
+
+# =========================
+# Gyro click class 
+# Used in the l3gd20_test.py (Gyro click example)
+#
+# ========================
+
 
 class L3GD20 :
 
