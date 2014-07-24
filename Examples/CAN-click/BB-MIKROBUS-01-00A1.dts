@@ -1,9 +1,12 @@
 /*
-* Copyright (C) 2013 Daniele Sdei <danielesdei@gmail.com>
+* Copyright (C) 2014 Peter Szamosi <szamosi.peter@gmail.com>
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License version 2 as
 * published by the Free Software Foundation.
+*
+* This device tree overlay is used for the CAN-Click mounted on the mikroBUS-Cape
+*
 */
 /dts-v1/;
 /plugin/;
