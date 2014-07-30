@@ -12,3 +12,5 @@ def read():
 		
 	
 read()
+
+spi.close
