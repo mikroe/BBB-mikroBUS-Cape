@@ -1,6 +1,7 @@
 Here are the examples in python and C
 
- - adxl345_test.py    
+ - adxl345_test.py    ADX1345 accel click example
+ - expand_read.py     EXAPND click only PIN states read example 
  - l3gd20_test.py     Gyro click example 
  - led_test.py        8x8Rclick example 
  - tigal.py           8x8Rclick example
