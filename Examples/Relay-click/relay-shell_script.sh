@@ -107,3 +107,6 @@ cd ..
 cd gpio113
 echo 0 > value
 cd ..
+
+echo 50 > unexport
+echo 113 > unexport
